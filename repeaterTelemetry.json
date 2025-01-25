@@ -1,0 +1,35 @@
+{
+  "W5AUU-3": {
+    "name": "W5AUU-3",
+    "serialNumber": "023",
+    "telemetry1": "136",
+    "telemetry2": "057",
+    "telemetry3": "026",
+    "telemetry4": "000",
+    "telemetry5": "307",
+    "binary": "00001011",
+    "lastUpdated": "2021-03-14T22:30:59.1375405-05:00"
+  },
+  "W5AUU-1": {
+    "name": "W5AUU-1",
+    "serialNumber": "014",
+    "telemetry1": "137",
+    "telemetry2": "068",
+    "telemetry3": "000",
+    "telemetry4": "000",
+    "telemetry5": "134",
+    "binary": "10001011",
+    "lastUpdated": "2021-03-14T22:26:43.0248559-05:00"
+  },
+  "W5AUU-2": {
+    "name": "W5AUU-2",
+    "serialNumber": "530",
+    "telemetry1": "135",
+    "telemetry2": "069",
+    "telemetry3": "000",
+    "telemetry4": "000",
+    "telemetry5": "112",
+    "binary": "00100011",
+    "lastUpdated": "2021-03-14T22:26:37.8179431-05:00"
+  }
+}
