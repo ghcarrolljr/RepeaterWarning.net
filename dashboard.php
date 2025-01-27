@@ -28,7 +28,6 @@ function writeCommonOptions() {
                         .repeater {
                                 width: 600px;
                                 float: left;
-                                background-color: green;
                         }
                         .repeater .title {
                                 font-size: 2em;
