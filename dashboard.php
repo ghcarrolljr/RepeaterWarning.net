@@ -86,12 +86,12 @@ function writeCommonOptions() {
                                 }
                         }
 
-                        $.getJSON("http://sitebygeorge.com/RepeaterWarning.net/json.php", function(result){
+                        $.getJSON("/RepeaterWarning.net/json.php", function(result){
                                 jsonData = result;
                         });
 
                         setInterval(function() {
-                                $.getJSON("http://sitebygeorge.com/RepeaterWarning.net/json.php", function(result){
+                                $.getJSON("/RepeaterWarning.net/json.php", function(result){
                                         jsonData = result;
                                 });
                         }, 60000);
