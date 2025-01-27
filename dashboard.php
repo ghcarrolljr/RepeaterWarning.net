@@ -77,12 +77,12 @@ function writeCommonOptions() {
 				}
 			}
 			
-			$.getJSON("https://sitebygeorge.com/RepeaterWarning/json.php", function(result){
+			$.getJSON("https://sitebygeorge.com/RepeaterWarning.net/json.php", function(result){
 				jsonData = result;
 			});
 			
 			setInterval(function() {
-				$.getJSON("https://sitebygeorge.com/RepeaterWarning/json.php", function(result){
+				$.getJSON("https://sitebygeorge.com/RepeaterWarning.net/json.php", function(result){
 					jsonData = result;
 				});
 			}, 60000);
