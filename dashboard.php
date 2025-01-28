@@ -111,10 +111,10 @@ function writeCommonOptions() {
                                 },
                                 time : {
                                         <?php writeCommonOptions() ?>,
-                                        redFrom: 360, redTo: 420,
-                                        yellowFrom:120, yellowTo: 360,
-                                        greenFrom: 0, greenTo: 120,
-                                        min: 0, max: 420
+                                        redFrom: 3600, redTo: 5000,
+                                        yellowFrom:1200, yellowTo: 3600,
+                                        greenFrom: 0, greenTo: 1200,
+                                        min: 0, max: 5000
                                 },
                                 power : {
                                         <?php writeCommonOptions() ?>,
