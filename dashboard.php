@@ -114,7 +114,7 @@ function writeCommonOptions() {
                                         redFrom: 1000, redTo: 2000,
                                         yellowFrom:900, yellowTo: 1000,
                                         greenFrom: 0, greenTo: 900,
-                                        min: 0, max: 5000
+                                        min: 0, max: 2000
                                 },
                                 power : {
                                         <?php writeCommonOptions() ?>,
