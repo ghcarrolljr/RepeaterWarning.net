@@ -130,8 +130,10 @@ function writeCommonOptions() {
 
 makeDrawChart("Battery (v)", "chart1a", "options.battery", "jsonData.repeaters.entries['W5AUU-1'].voltage/10",0);
 // Example Unix timestamp (replace this with your own timestamp)
-$reportTime = "jsonData.repeaters.entries['W5AUU-1'].time";
 
+$date = new DateTime();
+$currentTimestamp = $date->getTimestamp();
+$reportTime = "jsonData.repeaters.entries['W5AUU-1'].lasttime";
 makeDrawChart("Time (min)", "chart1b", "options.time", $reportTime, 0);
 makeDrawChart("Grid power", "chart1c", "options.power", "jsonData.repeaters.telemetry['W5AUU-1'].telemetry5",5);
 
