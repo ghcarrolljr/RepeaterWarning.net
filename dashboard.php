@@ -128,7 +128,7 @@ function writeCommonOptions() {
                                 if (jsonData) { // Don't run this unless jsonData is defined (might still be loading)
 <?php
 
-makeDrawChart("Battery (v)", "chart1a", "options.battery", "jsonData.repeaters.entries['W5AUU-1'].voltage",0);
+makeDrawChart("Battery (v)", "chart1a", "options.battery", "jsonData.repeaters.entries['W5AUU-1'].voltage/10",0);
 makeDrawChart("Time (min)", "chart1b", "options.time", "jsonData.repeaters.entries['W5AUU-1'].lastReportedMinutesAgo",0);
 makeDrawChart("Grid power", "chart1c", "options.power", "jsonData.repeaters.entries['W5AUU-1'].powerValueForCharts",3);
 
