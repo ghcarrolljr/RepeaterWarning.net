@@ -37,14 +37,6 @@ class Repeater {
 		$this->status = $aprsFi["status"];
 
 		$this->voltage = $telemetry["telemetry" . $this->telemetryVoltageChannel];
-		# Divide the value by 10
-		data['$this->voltage'] /= 10
-
-		# Convert back to JSON
-		updated_json_data = json.dumps(data)
-
-		
-		
 		$this->gridPower = $telemetry["telemetry" . $this->telemetryGridPowerStatusChannel];
 		$this->tempurature = $telemetry["telemetry" . $this->telemetryTempuratureChannel];
 
