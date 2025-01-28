@@ -143,7 +143,7 @@ makeDrawChart("Grid power", "chart2c", "options.power", "jsonData.repeaters.tele
 
 makeDrawChart("Battery (v)", "chart3a", "options.battery", "jsonData.repeaters.entries['W5AUU-3'].voltage/10",0);
 makeDrawChart("Time (min)", "chart3b", "options.time", "jsonData.repeaters.entries['W5AUU-3'].lastStatusTime",0);
-makeDrawChart("Grid power", "chart3c", "options.power", "jsonData.repeaters.telemetry['W5AUU-3'].-telemetry3*10",5);
+makeDrawChart("Grid power", "chart3c", "options.power", "jsonData.repeaters.telemetry['W5AUU-3'].telemetry3*10",5);
 
 ?>
 
