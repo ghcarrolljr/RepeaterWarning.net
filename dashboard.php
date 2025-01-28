@@ -135,15 +135,15 @@ $unixTimestamp = "jsonData.repeaters.entries['W5AUU-1'].lastStatusTime";
 
 
 makeDrawChart("Time (min)", "chart1b", "options.time", $unixTimestamp, 0);
-makeDrawChart("Grid power", "chart1c", "options.power", "jsonData.repeaters.telemetry['W5AUU-1'].gridPower",5);
+makeDrawChart("Grid power", "chart1c", "options.power", "jsonData.repeaters.telemetry['W5AUU-1'].telemetry5",5);
 
 makeDrawChart("Battery (v)", "chart2a", "options.battery", "jsonData.repeaters.entries['W5AUU-2'].voltage/10",0);
 makeDrawChart("Time (min)", "chart2b", "options.time", "jsonData.repeaters.entries['W5AUU-2'].lastStatusTime",0);
-makeDrawChart("Grid power", "chart2c", "options.power", "jsonData.repeaters.telemetry['W5AUU-2'].gridPower",5);
+makeDrawChart("Grid power", "chart2c", "options.power", "jsonData.repeaters.telemetry['W5AUU-2'].telemetry5",5);
 
 makeDrawChart("Battery (v)", "chart3a", "options.battery", "jsonData.repeaters.entries['W5AUU-3'].voltage/10",0);
 makeDrawChart("Time (min)", "chart3b", "options.time", "jsonData.repeaters.entries['W5AUU-3'].lastStatusTime",0);
-makeDrawChart("Grid power", "chart3c", "options.power", "jsonData.repeaters.telemetry['W5AUU-3'].gridPower",3);
+makeDrawChart("Grid power", "chart3c", "options.power", "jsonData.repeaters.telemetry['W5AUU-3'].telemetry3",3);
 
 ?>
 
