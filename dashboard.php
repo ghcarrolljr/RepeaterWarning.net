@@ -111,9 +111,9 @@ function writeCommonOptions() {
                                 },
                                 time : {
                                         <?php writeCommonOptions() ?>,
-                                        redFrom: 3600, redTo: 5000,
-                                        yellowFrom:1200, yellowTo: 3600,
-                                        greenFrom: 0, greenTo: 1200,
+                                        redFrom: 4000, redTo: 5000,
+                                        yellowFrom:30000, yellowTo: 4000,
+                                        greenFrom: 0, greenTo: 3000,
                                         min: 0, max: 5000
                                 },
                                 power : {
@@ -129,7 +129,6 @@ function writeCommonOptions() {
 <?php
 
 makeDrawChart("Battery (v)", "chart1a", "options.battery", "jsonData.repeaters.entries['W5AUU-1'].voltage/10",0);
-// Example Unix timestamp (replace this with your own timestamp)
 
 $date = new DateTime();
 $currentTimestamp = $date->getTimestamp();
@@ -139,12 +138,19 @@ $diffTime = "$currentTimestamp-$reportTime";
 makeDrawChart("Time (min)", "chart1b", "options.time", $diffTime, 0);
 makeDrawChart("Grid power", "chart1c", "options.power", "jsonData.repeaters.telemetry['W5AUU-1'].telemetry5",5);
 
-makeDrawChart("Battery (v)", "chart2a", "options.battery", "jsonData.repeaters.entries['W5AUU-2'].voltage/10",0);
-makeDrawChart("Time (min)", "chart2b", "options.time", "jsonData.repeaters.entries['W5AUU-2'].lastStatusTime",0);
+$date = new DateTime();
+$currentTimestamp = $date->getTimestamp();
+$reportTime = "jsonData.repeaters.entries['W5AUU-2'].lastStatusTime";
+$diffTime = "$currentTimestamp-$reportTime";makeDrawChart("Battery (v)", "chart2a", "options.battery", "jsonData.repeaters.entries['W5AUU-2'].voltage/10",0);
+makeDrawChart("Time (min)", "chart2b", "options.time", $diffTime,0);
 makeDrawChart("Grid power", "chart2c", "options.power", "jsonData.repeaters.telemetry['W5AUU-2'].telemetry5",5);
 
+$date = new DateTime();
+$currentTimestamp = $date->getTimestamp();
+$reportTime = "jsonData.repeaters.entries['W5AUU-3'].lastStatusTime";
+$diffTime = "$currentTimestamp-$reportTime";
 makeDrawChart("Battery (v)", "chart3a", "options.battery", "jsonData.repeaters.entries['W5AUU-3'].voltage/10",0);
-makeDrawChart("Time (min)", "chart3b", "options.time", "jsonData.repeaters.entries['W5AUU-3'].lastStatusTime",0);
+makeDrawChart("Time (min)", "chart3b", "options.time", $diffTime,0);
 makeDrawChart("Grid power", "chart3c", "options.power", "jsonData.repeaters.telemetry['W5AUU-3'].telemetry3*50",5);
 
 ?>
