@@ -134,13 +134,13 @@ $unixTimestamp = "jsonData.repeaters.entries['W5AUU-1'].lastStatusTime";
 
 // Create a DateTime object from the Unix timestamp
 $date = new DateTime();
-$date->setTimestamp($unixTimestamp);
+//$date->setTimestamp($unixTimestamp);
 
 // Set the timezone to America/Chicago
 //$timezone = new DateTimeZone('America/Chicago');
 //$date->setTimezone($timezone);
 
-makeDrawChart("Time (min)", "chart1b", "options.time", $date, 0);
+makeDrawChart("Time (min)", "chart1b", "options.time", $date->setTimestamp($unixTimestamp), 0);
 makeDrawChart("Grid power", "chart1c", "options.power", "jsonData.repeaters.entries['W5AUU-1'].gridPower",3);
 
 makeDrawChart("Battery (v)", "chart2a", "options.battery", "jsonData.repeaters.entries['W5AUU-2'].voltage/10",0);
