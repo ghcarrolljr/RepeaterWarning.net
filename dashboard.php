@@ -104,10 +104,10 @@ function writeCommonOptions() {
                         var options = {
                                 battery : {
                                         <?php writeCommonOptions() ?>,
-                                        redFrom: 100, redTo: 110,
-                                        yellowFrom:110, yellowTo: 120,
-                                        greenFrom: 120, greenTo: 140,
-                                        min: 100, max: 140
+                                        redFrom: 10, redTo: 11,
+                                        yellowFrom:11, yellowTo: 12,
+                                        greenFrom: 12, greenTo: 14,
+                                        min: 10.0, max: 14.0
                                 },
                                 time : {
                                         <?php writeCommonOptions() ?>,
@@ -132,11 +132,11 @@ makeDrawChart("Battery (v)", "chart1a", "options.battery", "jsonData.repeaters.e
 makeDrawChart("Time (min)", "chart1b", "options.time", "jsonData.repeaters.entries['W5AUU-1'].lastReportedMinutesAgo",0);
 makeDrawChart("Grid power", "chart1c", "options.power", "jsonData.repeaters.entries['W5AUU-1'].powerValueForCharts",3);
 
-makeDrawChart("Battery (v)", "chart2a", "options.battery", "jsonData.repeaters.entries['W5AUU-2'].voltage",0);
+makeDrawChart("Battery (v)", "chart2a", "options.battery", "jsonData.repeaters.entries['W5AUU-2'].voltage/10",0);
 makeDrawChart("Time (min)", "chart2b", "options.time", "jsonData.repeaters.entries['W5AUU-2'].lastReportedMinutesAgo",0);
 makeDrawChart("Grid power", "chart2c", "options.power", "jsonData.repeaters.entries['W5AUU-2'].powerValueForCharts",3);
 
-makeDrawChart("Battery (v)", "chart3a", "options.battery", "jsonData.repeaters.entries['W5AUU-3'].voltage",0);
+makeDrawChart("Battery (v)", "chart3a", "options.battery", "jsonData.repeaters.entries['W5AUU-3'].voltage/10",0);
 makeDrawChart("Time (min)", "chart3b", "options.time", "jsonData.repeaters.entries['W5AUU-3'].lastReportedMinutesAgo",0);
 makeDrawChart("Grid power", "chart3c", "options.power", "jsonData.repeaters.entries['W5AUU-3'].powerValueForCharts",3);
 
