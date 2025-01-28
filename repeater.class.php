@@ -38,7 +38,7 @@ class Repeater {
 
 		$this->voltage = $telemetry["telemetry" . $this->telemetryVoltageChannel];
 		# Divide the value by 10
-		data['voltage'] /= 10
+		data['$this->voltage'] /= 10
 
 		# Convert back to JSON
 		updated_json_data = json.dumps(data)
