@@ -36,7 +36,7 @@ class Repeater {
 		$this->comment = $aprsFi["comment"];
 		$this->status = $aprsFi["status"];
 
-		$this->voltage * 10 = $telemetry["telemetry" . $this->telemetryVoltageChannel];
+		$this->voltage = $telemetry["telemetry" . $this->telemetryVoltageChannel];
 		$this->gridPower = $telemetry["telemetry" . $this->telemetryGridPowerStatusChannel];
 		$this->tempurature = $telemetry["telemetry" . $this->telemetryTempuratureChannel];
 
