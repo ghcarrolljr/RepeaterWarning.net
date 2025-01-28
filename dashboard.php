@@ -133,7 +133,7 @@ makeDrawChart("Battery (v)", "chart1a", "options.battery", "jsonData.repeaters.e
 
 $date = new DateTime();
 $currentTimestamp = $date->getTimestamp();
-$reportTime = "jsonData.repeaters.aprsFiData.entries['W5AUU-1'].time";
+$reportTime = "jsonData.aprsFiData.entries['W5AUU-1'].time";
 makeDrawChart("Time (min)", "chart1b", "options.time", $reportTime, 0);
 makeDrawChart("Grid power", "chart1c", "options.power", "jsonData.repeaters.telemetry['W5AUU-1'].telemetry5",5);
 
