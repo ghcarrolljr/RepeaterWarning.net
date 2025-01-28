@@ -104,10 +104,10 @@ function writeCommonOptions() {
                         var options = {
                                 battery : {
                                         <?php writeCommonOptions() ?>,
-                                        redFrom: 10, redTo: 11,
-                                        yellowFrom:11, yellowTo: 12,
-                                        greenFrom: 12, greenTo: 14,
-                                        min: 10.0, max: 14.0
+                                        redFrom: 100, redTo: 110,
+                                        yellowFrom:110, yellowTo: 120,
+                                        greenFrom: 120, greenTo: 140,
+                                        min: 100, max: 140
                                 },
                                 time : {
                                         <?php writeCommonOptions() ?>,
