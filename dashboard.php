@@ -26,7 +26,7 @@ function writeCommonOptions() {
                 <title>Repeater Status Dashboard</title>
                 <style type="text/css">
                         .repeater {
-                                width: 100%;
+                                width: 33.3%;
                                 float: left;
                                 background-color: gray;
                         }
