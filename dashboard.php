@@ -118,9 +118,9 @@ function writeCommonOptions() {
                                 },
                                 power : {
                                         <?php writeCommonOptions() ?>,
-                                        redFrom: 0, redTo: 20,
-                                        greenFrom: 20, greenTo: 40,
-                                        min: 0, max: 40
+                                        redFrom: 0, redTo: 75,
+                                        greenFrom: 75, greenTo: 150,
+                                        min: 0, max: 150
                                 }
                         };
 
@@ -130,7 +130,7 @@ function writeCommonOptions() {
 
 makeDrawChart("Battery (v)", "chart1a", "options.battery", "jsonData.repeaters.entries['W5AUU-1'].voltage/10",0);
 makeDrawChart("Time (min)", "chart1b", "options.time", "jsonData.repeaters.entries['W5AUU-1'].lastStatusTime",0);
-makeDrawChart("Grid power", "chart1c", "options.power", "jsonData.repeaters.entries['W5AUU-1'].gridPower",3);
+makeDrawChart("Grid power", "chart1c", "options.power", "jsonData.repeaters.entries['W5AUU-1'].gridPower/10",3);
 
 makeDrawChart("Battery (v)", "chart2a", "options.battery", "jsonData.repeaters.entries['W5AUU-2'].voltage/10",0);
 makeDrawChart("Time (min)", "chart2b", "options.time", "jsonData.repeaters.entries['W5AUU-2'].lastStatusTime",0);
