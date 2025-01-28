@@ -31,7 +31,7 @@ function writeCommonOptions() {
                                 background-color: gray;
                         }
                         .repeater .title {
-                                font-size: 1em;
+                                font-size: 1.5em;
                                 font-weight: bold;
                                 background-color: green;
                         }
