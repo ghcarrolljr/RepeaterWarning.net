@@ -118,9 +118,9 @@ function writeCommonOptions() {
                                 },
                                 power : {
                                         <?php writeCommonOptions() ?>,
-                                        redFrom: 0, redTo: 75,
-                                        greenFrom: 75, greenTo: 150,
-                                        min: 0, max: 150
+                                        redFrom: 0, redTo: 750,
+                                        greenFrom: 750, greenTo: 1500,
+                                        min: 0, max: 1500
                                 }
                         };
 
