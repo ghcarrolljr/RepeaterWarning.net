@@ -133,8 +133,8 @@ makeDrawChart("Battery (v)", "chart1a", "options.battery", "jsonData.repeaters.e
 $unixTimestamp = "jsonData.repeaters.entries['W5AUU-1'].lastStatusTime";
 
 // Create a DateTime object from the Unix timestamp
-//$date = new DateTime();
-//$date->setTimestamp($unixTimestamp);
+$date = new DateTime();
+$date->setTimestamp($unixTimestamp);
 
 // Set the timezone to America/Chicago
 //$timezone = new DateTimeZone('America/Chicago');
