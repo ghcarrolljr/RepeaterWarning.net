@@ -140,7 +140,10 @@ $date->setTimestamp($unixTimestamp);
 $timezone = new DateTimeZone('America/Chicago');
 $date->setTimezone($timezone);
 
-makeDrawChart("Time (min)", "chart1b", "options.time", "$date->format('Y-m-d H:i:s')", 0);
+// Convert the DateTime object to a string
+$chicagoTimeString = $date->format('Y-m-d H:i:s');
+
+makeDrawChart("Time (min)", "chart1b", "options.time", "$chicagoTimeString", 0);
 makeDrawChart("Grid power", "chart1c", "options.power", "jsonData.repeaters.entries['W5AUU-1'].gridPower",3);
 
 makeDrawChart("Battery (v)", "chart2a", "options.battery", "jsonData.repeaters.entries['W5AUU-2'].voltage/10",0);
