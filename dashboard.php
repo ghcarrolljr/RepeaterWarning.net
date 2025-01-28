@@ -139,11 +139,11 @@ makeDrawChart("Grid power", "chart1c", "options.power", "jsonData.repeaters.entr
 
 makeDrawChart("Battery (v)", "chart2a", "options.battery", "jsonData.repeaters.entries['W5AUU-2'].voltage/10",0);
 makeDrawChart("Time (min)", "chart2b", "options.time", "jsonData.repeaters.entries['W5AUU-2'].lastStatusTime",0);
-makeDrawChart("Grid power", "chart2c", "options.power", "jsonData.repeaters.entries['W5AUU-2'].powerValueForCharts",3);
+makeDrawChart("Grid power", "chart2c", "options.power", "jsonData.repeaters.entries['W5AUU-2'].gridPower",3);
 
 makeDrawChart("Battery (v)", "chart3a", "options.battery", "jsonData.repeaters.entries['W5AUU-3'].voltage/10",0);
 makeDrawChart("Time (min)", "chart3b", "options.time", "jsonData.repeaters.entries['W5AUU-3'].lastStatusTime",0);
-makeDrawChart("Grid power", "chart3c", "options.power", "jsonData.repeaters.entries['W5AUU-3'].powerValueForCharts",3);
+makeDrawChart("Grid power", "chart3c", "options.power", "jsonData.repeaters.entries['W5AUU-3'].gridPower",5);
 
 ?>
 
