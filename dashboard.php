@@ -132,18 +132,9 @@ makeDrawChart("Battery (v)", "chart1a", "options.battery", "jsonData.repeaters.e
 // Example Unix timestamp (replace this with your own timestamp)
 $unixTimestamp = "jsonData.repeaters.entries['W5AUU-1'].lastStatusTime";
 
-// Create a DateTime object from the Unix timestamp
-$date = new DateTime();
-$date->setTimestamp($unixTimestamp);
 
-// Set the timezone to America/Chicago
-//$timezone = new DateTimeZone('America/Chicago');
-//$date->setTimezone($timezone);
 
-// Convert the DateTime object to a string
-//$chicagoTimeString = $date->format('Y-m-d H:i:s');
-
-makeDrawChart("Time (min)", "chart1b", "options.time", $unixTimestamp, 0);
+makeDrawChart("Time (min)", "chart1b", "options.time", date('Y-m-d h:i:s',$item->$unixTimestamp, 0);
 makeDrawChart("Grid power", "chart1c", "options.power", "jsonData.repeaters.entries['W5AUU-1'].gridPower",3);
 
 makeDrawChart("Battery (v)", "chart2a", "options.battery", "jsonData.repeaters.entries['W5AUU-2'].voltage/10",0);
