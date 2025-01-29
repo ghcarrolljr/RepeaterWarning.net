@@ -13,11 +13,11 @@ class database {
 
 // Not used but might need to be if you want to alert different ppl for different problems.
 $recipients = [
-        "typicalSuspects" => "joshcarroll21@gmail.com, 5015140605txtfirstnet-mail.com ",
+        "typicalSuspects" => "",
         "w5auu1Power" => "",
         "w5auu2Power" => "",
         "w5auu3Power" => "",
-        "testMode" => "joshcarroll21@gmail.com, 5015140605@txt.firstnet-mail.com"
+        "testMode" => ""
 ];
 
 $pushover_token = "a421kzttscw9qk3wkc2bew4ok6y118";
