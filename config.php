@@ -6,8 +6,8 @@ error_reporting(E_ALL);
 
 class database {
 	public static $address = "localhost";
-	public static $username = "ghcarrolljr";
-	public static $password = "This15@P@55w0rd";
+	public static $username = "";
+	public static $password = "";
 	public static $schema = "theFile";
 }
 
