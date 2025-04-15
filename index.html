@@ -1,21 +1,8 @@
 <html>
 	<head>
-		<script src="js/jquery.min.js"></script>
-		<script>
-		$(document).ready(function(){
-		   $.ajax({
-		        url:'index.php',
-		        type:'GET', 
-		        data:"parameter=some_parameter",
-		       success:function(data)
-		       {
-              		$("#thisdiv").html(data);
-          	 }
-    });
-});
-</script>
-</head>
-<body>
-	<body>
-	</body>
+		<body>
+		    <img style="display: none;" src="index.php">
+		    <!--This will run RunFromHTML.php-->
+  		</body>
+	</head>
 </html>
